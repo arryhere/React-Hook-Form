@@ -1,0 +1,118 @@
+
+/* Number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 90%;
+  height: 40px;
+  margin: 5px 0;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+input:disabled{
+  pointer-events: none;
+  background-color: gray;
+  border: solid gray;
+}
+
+input:disabled{
+  cursor: not-allowed;
+}
+
+.error-msg{
+  font-size: 0.9rem;
+  color: rgb(255, 70, 70);
+}
+
+.btn{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  letter-spacing: 3px;
+}
+.btn:active{
+  background-color: rgb(255, 180, 180);
+  color: black;
+}
+
+.m-auto{
+  margin: auto;
+}
+.my-1{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.py-1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bg-cyan{
+  background-color: rgb(180, 255, 255);
+}
+
+li {
+  list-style: none;
+  height: 100%;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  padding: 10px;
+}
+.nav-link:hover {
+  background-color: rgb(255, 100, 100);
+  color: black;
+}
