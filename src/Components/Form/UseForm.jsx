@@ -128,20 +128,10 @@ export default function UseForm() {
           <input type="checkbox" {...register('user.checkbox')} />
 
           {/* Submit */}
-          <input
-            type="submit"
-            value="Submit"
-            className="btn btn-submit"
-            disabled={!isValid}
-          />
+          <input type="submit" value="Submit" className="btn btn-submit" disabled={!isValid} />
 
           {/* Reset */}
-          <input
-            type="button"
-            value="Reset"
-            className="btn btn-reset"
-            onClick={() => reset()}
-          />
+          <input type="button" value="Reset" className="btn btn-reset" onClick={() => reset()} />
 
           {/* Reset Field */}
           {watch('user.checkbox') && (
